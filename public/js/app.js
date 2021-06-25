@@ -43,7 +43,8 @@ weatherForm.addEventListener('submit', (e) => {
     message1.textContent = 'Loading ...'
     message2.textContent = ''               // to clear any previous message since we are not refreshing page
 
-    fetch(`http://localhost:3000/weather?address=${location}`)
+    // fetch(`http://localhost:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
     .then((response) => {
         response.json()
         .then((data) => {
