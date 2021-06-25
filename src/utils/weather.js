@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, location, callback) => {
             // var data = response.body
             // console.log(`It is currently ${data.current.temperature} degrees out. It feels like ${data.current.feelslike} degrees out. ${data.current.weather_descriptions[0]}.`)
             // callback(null, `${location}: It is currently ${data.current.temperature} degrees out. It feels like ${data.current.feelslike} degrees out. ${data.current.weather_descriptions[0]}.`)
-            callback(null, `It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out. ${body.current.weather_descriptions[0]}.`)
+            callback(null, `It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out. ${body.current.weather_descriptions[0]}. The humidity is ${body.current.humidity}%`)
             
         }
     })
