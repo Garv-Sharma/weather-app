@@ -60,7 +60,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        message: 'To get help, please contact us',
+        message: 'To get help, please contact the owner of the website at garv24sharma@gmail.com',
         name: 'GS'
     })
 })
@@ -137,7 +137,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        message: 'Page   not found',
+        message: 'Page not found',
         name: 'GS'
     })
 })
