@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"node src/app.js\" && node src/app.js",
+    "test": "echo \"No test specified\"",
     "start": "node src/app.js"
   },
   "keywords": [],
